@@ -11,7 +11,7 @@ Config.anti_alias_custom_block_glyphs = true
 
 Config.font = wt.font_with_fallback {
   {
-    family = "FiraCode Nerd Font",
+    family = "DejaVuSansM Nerd Font",
     weight = "Regular",
     harfbuzz_features = {
       -- "cv01", ---styles: a
@@ -48,14 +48,12 @@ Config.font = wt.font_with_fallback {
       -- "onum", ---styles: 1234567890
     },
   },
-  { family = "Noto Color Emoji" },
-  { family = "LegacyComputing" },
 }
 
 if fs.platform().is_win then
-  Config.font_size = 9.5
+  Config.font_size = 11
 else
-  Config.font_size = 10.5
+  Config.font_size = 11
 end
 
 Config.underline_position = -2.5
@@ -71,13 +69,13 @@ Config.font_rules = {
     italic = true,
     font = wt.font_with_fallback {
       {
-        family = "Monaspace Radon Var",
+        family = "DejaVuSansM Nerd Font",
         style = "Normal",
         weight = "Regular",
         stretch = "Normal",
         harfbuzz_features = monaspace_features,
       },
-      { family = "Symbols Nerd Font" },
+      { family = "DejaVuSansM Nerd Font" },
     },
   },
   {
@@ -85,13 +83,13 @@ Config.font_rules = {
     italic = true,
     font = wt.font_with_fallback {
       {
-        family = "Monaspace Krypton Var",
+        family = "DejaVuSansM Nerd Font",
         style = "Italic",
         weight = "Black",
         harfbuzz_features = monaspace_features,
         scale = 1.1,
       },
-      { family = "Symbols Nerd Font" },
+      { family = "DejaVuSansM Nerd Font" },
     },
   },
 }
