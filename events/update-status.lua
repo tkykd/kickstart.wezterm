@@ -45,6 +45,7 @@ wt.on("update-status", function(window, pane)
   window:set_left_status(LeftStatus:format())
   -- }}}
 
+  --[[
   -- {{{1 RIGHT STATUS
 
   local RightStatus = StatusBar:new "RightStatus"
@@ -178,6 +179,9 @@ wt.on("update-status", function(window, pane)
   window:set_right_status(RightStatus:format())
   --~ }}}
   -- }}}
+
+]]
+  --
 end)
 -- luacheck: pop
 
