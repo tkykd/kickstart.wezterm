@@ -4,11 +4,10 @@ local fs = Utils.fn.fs
 
 local Config = {}
 
---Config.color_schemes = color.get_schemes()
---Config.color_scheme = color.get_scheme()
+Config.color_schemes = color.get_schemes()
+Config.color_scheme = color.get_scheme()
 
---local theme = Config.color_schemes[Config.color_scheme]
-local theme = "Tango (base16)"
+local theme = Config.color_schemes[Config.color_scheme]
 
 Config.background = {
   {
@@ -23,11 +22,11 @@ Config.bold_brightens_ansi_colors = "BrightAndBold"
 ---char select and command palette
 Config.char_select_bg_color = theme.brights[6]
 Config.char_select_fg_color = theme.background
-Config.char_select_font_size = 12
+Config.char_select_font_size = 11
 
 Config.command_palette_bg_color = theme.brights[6]
 Config.command_palette_fg_color = theme.background
-Config.command_palette_font_size = 14
+Config.command_palette_font_size = 11
 Config.command_palette_rows = 20
 
 ---cursor
