@@ -4,8 +4,10 @@ local fs = require("utils.fn").fs
 local Config = {}
 
 if fs.platform().is_win then
-  Config.default_prog =
-    { "pwsh", "-NoLogo", "-ExecutionPolicy", "RemoteSigned", "-NoProfileLoadTime" }
+  Config.default_prog = {
+    "sh",
+    "-l",
+  }
 
   Config.launch_menu = {
     {
@@ -21,11 +23,26 @@ if fs.platform().is_win then
     },
     {
       label = Icons.Progs["pwsh.exe"] .. " PowerShell V5",
-      args = { "powershell" },
+      args = {
+        "powershell",
+      },
       cwd = "~",
     },
-    { label = "Command Prompt", args = { "cmd.exe" }, cwd = "~" },
-    { label = Icons.Progs["git"] .. " Git bash", args = { "sh", "-l" }, cwd = "~" },
+    {
+      label = "Command Prompt",
+      args = {
+        "cmd.exe",
+      },
+      cwd = "~",
+    },
+    {
+      label = Icons.Progs["git"] .. " Git bash",
+      args = {
+        "sh",
+        "-l",
+      },
+      cwd = "~",
+    },
   }
 
   -- ref: https://wezfurlong.org/wezterm/config/lua/WslDomain.html
