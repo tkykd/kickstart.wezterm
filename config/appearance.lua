@@ -66,10 +66,13 @@ Config.window_padding = { left = 2, right = 2, top = 2, bottom = 1 }
 Config.integrated_title_button_alignment = "Right"
 Config.integrated_title_button_style = "Windows"
 Config.integrated_title_buttons = { "Hide", "Maximize", "Close" }
+Config.initial_rows = 60
+Config.initial_cols = 220
 
 ---exit behavior
 Config.clean_exit_codes = { 130 }
-Config.exit_behavior = "CloseOnCleanExit"
+--Config.exit_behavior = "CloseOnCleanExit"
+Config.exit_behavior = "Close"
 Config.exit_behavior_messaging = "Verbose"
 Config.skip_close_confirmation_for_processes_named = {
   "bash",
