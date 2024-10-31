@@ -20,8 +20,8 @@ end
 
 M.get = function()
   local sizes = {}
-  for i = 8, 30 do
-    sizes[#sizes + 1] = { label = ("%2dpt"):format(i), id = tostring(i) }
+  for i = 8, 30, 0.5 do
+    sizes[#sizes + 1] = { label = ("%4.1fpt"):format(i), id = tostring(i) }
   end
 
   return sizes
