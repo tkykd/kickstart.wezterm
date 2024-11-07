@@ -66,8 +66,6 @@ Config.window_padding = { left = 2, right = 2, top = 2, bottom = 1 }
 Config.integrated_title_button_alignment = "Right"
 Config.integrated_title_button_style = "Windows"
 Config.integrated_title_buttons = { "Hide", "Maximize", "Close" }
-Config.initial_rows = 55
-Config.initial_cols = 200
 
 ---exit behavior
 Config.clean_exit_codes = { 130 }
