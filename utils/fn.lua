@@ -688,7 +688,7 @@ M.color.get_schemes = function()
 end
 
 ---Returns the colorscheme name absed on the system appearance
----@return '"solarized-dark"'|'"solarized-light"' colorscheme name of the colorscheme
+---@return '"kanagawa-wave"'|'"kanagawa-lotus"' colorscheme name of the colorscheme
 M.color.get_scheme = function()
   --  if (wt.gui and wt.gui.get_appearance() or ""):find "Dark" then
   --    return "kanagawa-wave"
@@ -696,7 +696,7 @@ M.color.get_scheme = function()
   --  return "kanagawa-lotus"
 
   -- But I prefer to use dark colorscheme as always
-  return "solarized-dark"
+  return "kanagawa-wave"
 end
 
 ---Sets the tab button style in the configuration based on the specified theme.
